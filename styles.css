@@ -46,6 +46,10 @@ body {
   display: inline-block;
 }
 
+.header__logo-small {
+  display: none;
+}
+
 .header__menu {
   max-width: 415px;
   display: flex;
@@ -377,12 +381,16 @@ body {
 
 /* ===================================for tablets====================================== */
 
-@media (max-width: 777px) {
+@media (max-width: 800px) {
   [class*="__container"] {
     max-width: 85%;
     margin: 0 auto;
     top: 0;
     left: 0;
+  }
+
+  .header__logo-small {
+    display: none;
   }
 
   .text-block__title {
@@ -442,7 +450,7 @@ body {
 
 /* ===================================for mobiles====================================== */
 
-@media (max-width: 380px) {
+@media (max-width: 500px) {
   [class*="__container"] {
     max-width: 90%;
     margin: 0 auto;
@@ -454,6 +462,14 @@ body {
     min-height: auto;
     justify-content: center;
     gap: 20px;
+  }
+
+  .header__logo {
+    display: none;
+  }
+
+  .header__logo-small {
+    display: inline-block;
   }
 
   .button {
