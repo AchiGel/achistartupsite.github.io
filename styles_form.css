@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css?family=Outfit:400,500);
+
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Outfit";
+}
+
+.form {
+  background-color: white;
+  display: flex;
+  max-height: 100%;
+}
+.form__text-form {
+  padding: 144px 110px 152px 80px;
+  flex: 1 1 55%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.form__text-form::before {
+  content: url(./Assets/close.png);
+  position: absolute;
+  top: 32px;
+  left: 48px;
+  cursor: pointer;
+}
+
+.text-form__title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  margin-bottom: 8px;
+}
+.text-form__box {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 120%;
+  letter-spacing: 0.015em;
+  color: #000000;
+  margin-bottom: 32px;
+}
+
+.text-form__box span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0.015em;
+
+  color: #707070;
+}
+.text-form__box input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.text-form__box p {
+  margin-bottom: 32px;
+}
+.text-form__button {
+  background-color: #22c96a;
+  padding: 16px 32px;
+  display: inline-block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+  color: #ffffff;
+  border-radius: 6px;
+  transition: 0.8s;
+  max-width: fit-content;
+}
+.text-form__button:hover {
+  background-color: #7ad8a3;
+}
+
+.form__image {
+  flex: 1 1 45%;
+}
+
+/* ================================================================================== */
+
+@media (max-width: 1100px) {
+  .form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form__text-form {
+    padding: 100px 30px 50px;
+    flex: 1 1 50%;
+  }
+  .form__image {
+    flex: 1 1 50%;
+  }
+
+  .form__image img {
+    max-width: 100%;
+  }
+}
